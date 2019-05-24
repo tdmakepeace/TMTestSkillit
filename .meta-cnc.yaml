@@ -1,9 +1,9 @@
 name: Toby_Test
 # label used for menu selection
-label: Toby Testing (copy of Set hostname)
+label: Host and Update
 
 description: |
-  Toby Testing 
+  Update the hostname and the dynamic updates
 
 # type of skillet (panos or panorama or template or terraform)
 type: panos
@@ -29,12 +29,15 @@ variables:
     default: Europe/London
     type_hint: dropdown
     dd_list:
-      - key: key1
+      - key: Etc/GMT
         value: Etc/GMT
-      - key: key2
+      - key: Etc/GMT+0
         value: Etc/GMT+0
-      - key: key3
+      - key: Etc/GMT+1
         value: Etc/GMT+1
+      - key: Europe/London
+        value: Europe/London
+        
 
 
 # Snippets is an ordered list of configuration xml fragments that will be pushed to the Pan-OS NGFW. The xpath
