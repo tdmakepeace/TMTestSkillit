@@ -1,10 +1,9 @@
-name: hostname_change
+name: Toby_Test
 # label used for menu selection
-label: Hello World Example (Set hostname)
+label: Toby Testing (copy of Set hostname)
 
 description: |
-  This skillet demonstrates a very basic Pan-OS configuration change. This allows the user to configure the
-  hostname on a Pan-OS NGFW
+  Toby Testing 
 
 # type of skillet (panos or panorama or template or terraform)
 type: panos
@@ -16,14 +15,14 @@ extends:
 
 # Labels allow grouping and type specific options and are generally only used in advanced cases
 labels:
-  collection: Example Skillets
+  collection: Test Skillets
 
 # variables define the things an operator may customize in this skillet. Things like DNS servers, NTP addresses, etc
 # may be customized for each deployment. Each variable will be rendered as a form field in the panhandler application
 variables:
   - name: FW_NAME
     description: Firewall hostname
-    default: panos-01
+    default: TMTest-01
     type_hint: text
 
 # Snippets is an ordered list of configuration xml fragments that will be pushed to the Pan-OS NGFW. The xpath
